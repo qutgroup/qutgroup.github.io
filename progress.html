@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>审批进度</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!--
+    审批进度页
+    修改入口：新增/删除 .timeline-item 可以改变审批节点。
+  -->
+  <main class="app progress-page">
+    <nav class="tabs">
+      <a class="tab" href="detail.html">登记信息</a>
+      <a class="tab active" href="progress.html">审批进度</a>
+    </nav>
+
+    <section class="timeline-card">
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="check">✓</div>
+          <div class="timeline-content">
+            <h3>发起申请</h3>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="check">✓</div>
+          <div class="timeline-content">
+            <h3>一级审核部门</h3>
+            <p>已通过</p>
+          </div>
+        </div>
+        <div class="timeline-item last">
+          <div class="check">✓</div>
+          <div class="timeline-content">
+            <h3>结束</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>

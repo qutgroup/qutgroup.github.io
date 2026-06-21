@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>登记信息</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!--
+    登记信息详情页
+    修改入口：直接修改每个 .info-row 的文字、头像、来访事项即可。
+  -->
+  <main class="app detail-page">
+    <nav class="tabs">
+      <a class="tab active" href="detail.html">登记信息</a>
+      <a class="tab" href="progress.html">审批进度</a>
+    </nav>
+
+    <section class="detail-card node-card">
+      <div class="node-left">
+        <p class="node-row"><strong>当前节点</strong><span class="blue-dot"></span><span>结束</span></p>
+        <p class="opinion-title"><span class="pen">✎</span>审批意见</p>
+        <p class="opinion-text">无</p>
+      </div>
+      <div class="stamp">已通过</div>
+    </section>
+
+    <section class="detail-card">
+      <h2 class="section-title">访客信息</h2>
+      <div class="line"></div>
+      <div class="info-row"><span>姓名</span><strong>卢松松</strong></div>
+      <div class="info-row"><span>证件类型</span><strong>身份证</strong></div>
+      <div class="info-row"><span>证件号</span><strong>411425199006073911</strong></div>
+      <div class="info-row"><span>手机号</span><strong>18805311831</strong></div>
+    </section>
+
+    <section class="detail-card proof-card">
+      <h2 class="section-title">相关证明</h2>
+      <div class="line"></div>
+      <p class="proof-label">自拍照</p>
+      <img class="proof-photo" src="avatar-1.png" alt="自拍照" />
+    </section>
+
+    <section class="detail-card visit-info-card">
+      <h2 class="section-title">来访信息</h2>
+      <div class="line"></div>
+      <div class="info-row"><span>来访时间</span><strong>今日自动生成 08:00~今日自动生成 18:00</strong></div>
+      <div class="info-row"><span>提交时间</span><strong>自动生成-2天 09:39</strong></div>
+      <div class="info-row"><span>访问部门</span><strong>合作发展处</strong></div>
+      <div class="info-row"><span>车牌号</span><strong></strong></div>
+      <p class="business-title">具体业务事项</p>
+      <div class="business-box">校友返校，校友卡号NO.201501414260</div>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>访客申请</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!--
+    访客申请列表页
+    本版本已改成“来访日期自动取当天日期”。
+    修改时间：改每个 h2.visit-time 的 data-time。
+    修改部门：改 .dept 文本，同时改复制按钮的 data-dept。
+    替换头像：替换 avatar-1.png 等图片即可。
+  -->
+  <main class="app list-page">
+    <section class="filter-card">
+      <button class="select-btn" type="button">日期筛选<span class="down"></span></button>
+      <button class="select-btn" type="button">全部状态<span class="down"></span></button>
+    </section>
+
+    <section class="card-list">
+      <article class="visit-card" data-link="detail.html">
+        <div class="card-main">
+          <div class="card-text">
+            <h2 class="visit-time" data-time="08:00">来访时间：</h2>
+            <span class="status-pass">已通过</span>
+          </div>
+          <img class="avatar" src="avatar-1.png" alt="访客自拍照" />
+        </div>
+        <div class="divider"></div>
+        <div class="card-bottom">
+          <p class="dept"><span class="pin">⌖</span>访问部门：合作发展处</p>
+          <button class="copy-btn" type="button" data-time="16:00" data-dept="合作发展处">复制</button>
+        </div>
+      </article>
+
+      <article class="visit-card" data-link="detail.html">
+        <div class="card-main">
+          <div class="card-text">
+            <h2>来访时间：2026-06-07 08:00</h2>
+            <span class="status-pass">已通过</span>
+          </div>
+          <img class="avatar" src="avatar-1.png" alt="访客自拍照" />
+        </div>
+        <div class="divider"></div>
+        <div class="card-bottom">
+          <p class="dept"><span class="pin">⌖</span>访问部门：继续教育学院、高等职业学院</p>
+          <button class="copy-btn" type="button" data-time="08:00" data-dept="继续教育学院、高等职业学院">复制</button>
+        </div>
+      </article>
+
+      <article class="visit-card" data-link="detail.html">
+        <div class="card-main">
+          <div class="card-text">
+            <h2 >来访时间：2026-06-04 08:00</h2>
+            <span class="status-pass">已通过</span>
+          </div>
+          <img class="avatar" src="avatar-1.png" alt="访客自拍照" />
+        </div>
+        <div class="divider"></div>
+        <div class="card-bottom">
+          <p class="dept"><span class="pin">⌖</span>访问部门：继续教育学院、高等职业学院</p>
+          <button class="copy-btn" type="button" data-time="08:00" data-dept="继续教育学院、高等职业学院">复制</button>
+        </div>
+      </article>
+
+      <article class="visit-card" data-link="detail.html">
+        <div class="card-main">
+          <div class="card-text">
+            <h2>来访时间：2026-05-09 08:00</h2>
+            <span class="status-pass">已通过</span>
+          </div>
+          <img class="avatar" src="avatar-1.png" alt="访客自拍照" />
+        </div>
+        <div class="divider"></div>
+        <div class="card-bottom">
+          <p class="dept"><span class="pin">⌖</span>访问部门：继续教育学院、高等职业学院</p>
+          <button class="copy-btn" type="button" data-time="08:00" data-dept="继续教育学院、高等职业学院">复制</button>
+        </div>
+      </article>
+
+      <article class="visit-card" data-link="detail.html">
+        <div class="card-main">
+          <div class="card-text">
+            <h2>来访时间：2026-03-12 08:00</h2>
+            <span class="status-pass">已通过</span>
+          </div>
+          <img class="avatar" src="avatar-1.png" alt="访客自拍照" />
+        </div>
+        <div class="divider"></div>
+        <div class="card-bottom">
+          <p class="dept"><span class="pin">⌖</span>访问部门：继续教育学院、高等职业学院</p>
+          <button class="copy-btn" type="button" data-time="08:00" data-dept="继续教育学院、高等职业学院">复制</button>
+        </div>
+      </article>
+    </section>
+
+    <footer class="bottom-bar">
+      <button class="add-btn" type="button">＋ 添加</button>
+    </footer>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
