@@ -36,6 +36,9 @@ function showToast(text) {
 document.addEventListener('DOMContentLoaded', function () {
   var today = getTodayDate();
   var submitDate = getDateOffset(-2);
+  var today_1=getDateOffset(-1)
+  var today_p1=getDateOffset(+1)
+  
 
   // 列表页：自动把所有来访日期改成今天，时间从 data-time 读取。
   document.querySelectorAll('.visit-time').forEach(function (item) {
@@ -94,7 +97,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     var labelText = label.textContent.trim();
     if (labelText === '来访时间') {
-      value.textContent = today + ' 08:00~' + today + ' 18:00';
+      value.textContent = today_1 + ' 08:00~' + today_p1 + ' 18:00';
     }
     if (labelText === '提交时间') {
       value.textContent = submitDate + ' 09:39';
