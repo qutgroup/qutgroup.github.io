@@ -43,7 +43,7 @@ document.addEventListener('DOMContentLoaded', function () {
   // 列表页：自动把所有来访日期改成今天，时间从 data-time 读取。
   document.querySelectorAll('.visit-time').forEach(function (item) {
     var time = item.getAttribute('data-time') || '08:00';
-    item.textContent = '来访时间：' + today + ' ' + time;
+    item.textContent = '来访时间：' + today_1 + ' ' + time;
   });
 
   // 列表页：同步生成复制内容。
